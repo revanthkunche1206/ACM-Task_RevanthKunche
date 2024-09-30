@@ -49,7 +49,9 @@ class DoublyLinkedList:
             current.prev = new_node
 
             if current == self.head:
-                self.head = new_node 
+                self.head = new_node
+            if current == self.tail:
+                self.tail = new_node
 
     def delete_at_beginning(self):
         if self.head is None:
